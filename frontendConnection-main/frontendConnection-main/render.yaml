@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: career-connect-lesotho
+    env: static
+    buildCommand: npm run build
+    publishDir: dist
+    nodeVersion: 18
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REACT_APP_API_URL
+        value: https://career-connect-backend-lesotho.herokuapp.com
+      - key: REACT_APP_FIREBASE_API_KEY
+        value: AIzaSyACvgnR2RJhUwLDzw5gtVLz37j0zie1yRs
+      - key: REACT_APP_FIREBASE_AUTH_DOMAIN
+        value: career-connect-lesotho.firebaseapp.com
+      - key: REACT_APP_FIREBASE_PROJECT_ID
+        value: career-connect-lesotho
+      - key: REACT_APP_FIREBASE_STORAGE_BUCKET
+        value: career-connect-lesotho.appspot.com
+      - key: REACT_APP_FIREBASE_MESSAGING_SENDER_ID
+        value: 486454264099
+      - key: REACT_APP_FIREBASE_APP_ID
+        value: 1:486454264099:web:3c1c9e5edf897385aa4c96
